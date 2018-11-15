@@ -1,5 +1,6 @@
 module test
 include("particula.jl")
+include("pso.jl")
 "Ejemplos de prueba"
 function suma(x)
     return sum(x)
@@ -24,4 +25,8 @@ println(a.velocidad)
 println("Cambiando posicion..")
 particula.actualiza_posicion(a)
 println(a.posicion)
+###PSO
+p = pso.PSO(suma,10,[0.0,0.0])
+println(p)
+println(pso.corre_pso(30, p))
 end
