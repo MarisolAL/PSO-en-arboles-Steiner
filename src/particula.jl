@@ -5,8 +5,8 @@ using Random
 global W = 0.5  # Constante de inercia
 global C_1 = 1.25  # Constante cognitiva
 global C_2 = 1.75  # Constante social
-global limite_superior = [100,100,100,100]
-global limite_inferior = [-100,-100,-100,-100]
+global limite_superior = [100,100]
+global limite_inferior = [-100,-100]
 
 "Estructura que modela una particula"
 mutable struct Particula
@@ -81,10 +81,10 @@ MODIFICAR ESTA PARA QUE SEA CASCO CONVEXO"
 function verifica_posicion(p::Particula,posicion_nueva::Array{Float64,1})
     for i in 1:p.dimension
         if posicion_nueva[i]>limite_superior[i]
-            posicion_nueva[i] = rand(limite_inferior[i],limite_superior[i])
+            posicion_nueva[i] = Float64(rand(limite_inferior[i]:limite_superior[i]))
         end
         if posicion_nueva[i]<limite_inferior[i]
-            posicion_nueva[i] = rand(limite_inferior[i],limite_superior[i])
+            posicion_nueva[i] = Float64(rand(limite_inferior[i]:limite_superior[i]))
         end
     end
     p.posicion = posicion_nueva
