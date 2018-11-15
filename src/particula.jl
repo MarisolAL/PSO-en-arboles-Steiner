@@ -5,6 +5,8 @@ using Random
 global W = 0.5  # Constante de inercia
 global C_1 = 1.25  # Constante cognitiva
 global C_2 = 1.75  # Constante social
+global limite_superior = [100,100,100,100]
+global limite_inferior = [-100,-100,-100,-100]
 
 "Estructura que modela una particula"
 mutable struct Particula
@@ -74,8 +76,6 @@ function actualiza_velocidad(p::Particula, mejor_global::Particula)
     p.velocidad = (W*p.velocidad) + (C_1*r_1*v_c) + (C_2*r_2*v_s)
 end
 
-global limite_superior = [100,100,100,100]
-global limite_inferior = [-100,-100,-100,-100]
 "Funcion que verifica que la particula no se salga de los limites
 MODIFICAR ESTA PARA QUE SEA CASCO CONVEXO"
 function verifica_posicion(p::Particula,posicion_nueva::Array{Float64,1})
