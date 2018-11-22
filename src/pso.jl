@@ -1,8 +1,8 @@
 module pso
 include("particula.jl")
 
-global estancamiento_max = 35
-global empeora_max = 30
+global estancamiento_max = 150000
+global empeora_max = 150000
 
 " Constructor de la clase PSO
  Fitness es la funcion de costo, tam_poblacion el tama;o del enjambre,
@@ -46,9 +46,10 @@ function corre_pso(iteracion_maxima::Int64, pso::PSO)
         if mejor_actual == pso.mejor_global
             estancado += 1
         end
+        #println(i)
         i += 1
     end
     return pso.mejor_global
 end
-s
+
 end
