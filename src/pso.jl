@@ -28,6 +28,7 @@ function corre_pso(iteracion_maxima::Int64, pso::PSO)
     while i < iteracion_maxima && estancado < estancamiento_max
         mejor_actual = pso.mejor_global.mejor_fitness
         for k in 1:size(pso.poblacion)[1]
+            println(mejor_actual)
             #Actualizamos los mejores fitness y posiciones de cada particula
             particula.actualiza_mejor_individual(pso.poblacion[k])
             if pso.poblacion[k].fitness < pso.mejor_global.fitness
