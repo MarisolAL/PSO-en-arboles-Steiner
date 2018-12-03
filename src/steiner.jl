@@ -122,15 +122,19 @@ function obten_puntos_steiner(st::Steiner,iteracion_maxima::Int64,swarms::Int64,
             global arbol_actual = obten_arbol_con_punto(arbol_actual,punto)
             peso_0 = punto_steiner.mejor_fitness
             archivo = open(string(nombre_archivo,".txt"), "a")
-            escritura = string(punto_steiner.mejor_fitness,"\nPORCENTAJE DE MEJORA: ",porcentaje,"\n punto encontrado = ",punto_steiner.mejor_posicion,"\n punto = ",ps,"\n")
-            println("eval = ",eval_arbol(punto))
+            escritura = string("Costo total: ", punto_steiner.mejor_fitness,"\nPORCENTAJE DE MEJORA: ",porcentaje,"\n punto encontrado = ",punto_steiner.mejor_posicion,"\n")
             write(archivo, escritura)
             close(archivo)
-            println(peso_0)
-            println(punto)
         end
         k+=1
     end
+    archivo = open(string(nombre_archivo,".txt"), "a")
+    escritura = string("Arbol final : ",arbol_actual,"\n")
+    write(archivo, escritura)
+    for e in edges(arbol_actual[1])
+        write(archivo,string(e,"\n"))
+    end
+    close(archivo)
 end
 
 function obten_arreglo(nombre_archivo)
