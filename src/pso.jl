@@ -28,7 +28,6 @@ function corre_pso(iteracion_maxima::Int64, pso::PSO)
     while i < iteracion_maxima && estancado < estancamiento_max
         mejor_actual = pso.mejor_global.mejor_fitness
         for k in 1:size(pso.poblacion)[1]
-            println(mejor_actual)
             #Actualizamos los mejores fitness y posiciones de cada particula
             particula.actualiza_mejor_individual(pso.poblacion[k])
             if pso.poblacion[k].fitness < pso.mejor_global.fitness
@@ -36,20 +35,21 @@ function corre_pso(iteracion_maxima::Int64, pso::PSO)
                 estancado = 0
             end
         end
+        poblacion_vieja = PSO(pso.fun_fitness, size(pso.poblacion)[1], pso.poblacion[1].posicion)
         #Una vez que se acaba de actualizar el mejor_global
         for k in 1:size(pso.poblacion)[1]
-            particula.debo_matar(pso.poblacion[k], empeora_max)
-            particula.actualiza_velocidad(pso.poblacion[k], pso.mejor_global)
-            particula.actualiza_posicion(pso.poblacion[k])
+            poblacion_vieja.poblacion[k] = particula.debo_matar(pso.poblacion[k], empeora_max)
+            poblacion_vieja.poblacion[k] = particula.actualiza_velocidad(pso.poblacion[k], pso.mejor_global)
+            poblacion_vieja.poblacion[k] = particula.actualiza_posicion(pso.poblacion[k])
         end
-
+        pso.poblacion = poblacion_vieja.poblacion
         #Si no hubo mejora
         if mejor_actual == pso.mejor_global
             estancado += 1
         end
-        #println(i)
         i += 1
     end
+    #println(pso.mejor_global)
     return pso.mejor_global
 end
 

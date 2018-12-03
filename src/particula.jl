@@ -50,6 +50,7 @@ function actualiza_mejor_individual(particula::Particula)
         end
     end
     particula.fitness = evaluacion
+    return particula
 end
 
 "Funcion que se encarga de verificar si debemos matar a una particula dado un numero maximo para empeorar,
@@ -65,6 +66,7 @@ function debo_matar(particula::Particula, empeora_max::Int64)
         particula.fitness = p.fitness
         particula.posicion = p.posicion
     end
+    return particula
 end
 
 "Funcion que actualiza la velocidad de una particula"
@@ -74,6 +76,7 @@ function actualiza_velocidad(p::Particula, mejor_global::Particula)
     v_c = p.mejor_posicion - p.posicion #Velocidad de el mismo
     v_s = mejor_global.posicion - p.posicion #Velocidad de el mejor el sistema
     p.velocidad = (W*p.velocidad) + (C_1*r_1*v_c) + (C_2*r_2*v_s)
+    return p
 end
 
 "Funcion que verifica que la particula no se salga de los limites
@@ -95,6 +98,7 @@ function actualiza_posicion(p::Particula)
     posicion_aux = p.posicion + p.velocidad
     #Verificamos que no nos salgamos de los limites
     verifica_posicion(p,posicion_aux)
+    return p
 end
 
 end

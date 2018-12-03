@@ -55,6 +55,9 @@ end
 function obten_peso_total(arbol)
     suma = 0
     for v in edges(arbol[1])
+        if v.weight < 0
+            println("ERROR SUMA MENOR A 0 ",v)
+        end
        suma += v.weight
    end
    return suma
@@ -66,11 +69,12 @@ function obten_arbol_con_punto(S,p::Array{Float64,1})
     graf = copy(S[1])
     dict = copy(S[2])
     vert = nv(graf)
-    dict[vert + 1] = p #a;adimos el punto al diccionario
+    dict[vert + 1] = copy(p) #a;adimos el punto al diccionario
     add_vertex!(graf) #a;adimos un vertice
     for v in vertices(graf)
         if v != vert + 1 #si no es el vertice a;adido
-            add_edge!(graf,v,vert+1,distancia_2_puntos(dict[v],dict[v+1])) #Conectamos al vertice
+            #println("vertice1 = ",dict[v]," vertice 2 = ",dict[vert + 1]," distancia =",distancia_2_puntos(dict[v],dict[v+1]))
+            add_edge!(graf,v,vert+1,distancia_2_puntos(dict[v],dict[vert + 1])) #Conectamos al vertice
         end
     end
     #En este punto tenemos la grafica completa
@@ -98,7 +102,7 @@ end
 
 # Funcion que devuelve el fitness de un punto
 function eval_arbol(p)
-    G= obten_arbol_con_punto(arbol_actual,p)
+    G= obten_arbol_con_punto(arbol_actual,copy(p))
     peso = obten_peso_total(G)
     return peso
 end
@@ -118,19 +122,29 @@ function obten_puntos_steiner(st::Steiner,iteracion_maxima::Int64,swarms::Int64,
             global arbol_actual = obten_arbol_con_punto(arbol_actual,punto)
             peso_0 = punto_steiner.mejor_fitness
             archivo = open(string(nombre_archivo,".txt"), "a")
-            escritura = string(punto_steiner.mejor_fitness,"\nPORCENTAJE DE MEJORA: ",porcentaje,"\n")
-            println(escritura)
+            escritura = string(punto_steiner.mejor_fitness,"\nPORCENTAJE DE MEJORA: ",porcentaje,"\n punto encontrado = ",punto_steiner.mejor_posicion,"\n punto = ",ps,"\n")
+            println("eval = ",eval_arbol(punto))
             write(archivo, escritura)
             close(archivo)
+            println(peso_0)
+            println(punto)
         end
         k+=1
     end
 end
 
+function obten_arreglo(nombre_archivo)
+    N = Set()
+    ls = open(nombre_archivo)
+    for line in eachline(ls)
+        a = [map(x->parse(Float64,x),split(line," "))]
+        N = union(N,a)
+    end
+    return N
+end
+
 #Pruebas
-S = Set([[-2,8],[0,4],[4,8]])
-S = map(x -> float(x),S)
-#println(size_set(S))
+S = Set(obten_arreglo(string(Meta.parse(ARGS[1]))))
 arbol = construye_arbol(S)
 #println(arbol[1])
 #println(obten_peso_total(arbol))
@@ -141,8 +155,7 @@ stein = Steiner(S)
 fecha = string("Salidas_",Dates.now())
 archivo = open(string(fecha,".txt"), "a")
 escritura = string("Puntos:",S,"\nPeso original\n",stein.peso,"\n")
-println(escritura)
 write(archivo,escritura )
 close(archivo)
-obten_puntos_steiner(stein, 1000,100,10,fecha)
+obten_puntos_steiner(stein, 1000,100,30,fecha)
 end
