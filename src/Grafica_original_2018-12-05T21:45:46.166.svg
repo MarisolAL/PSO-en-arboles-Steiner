@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<body> 
+ <svg height="1970.0" width="1900.0" style="background: powderblue">
+<polyline points="170.0,1200.0 300.0,1040.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1610.0,110.0 1830.0,20.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="910.0,1560.0 700.0,1520.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="340.0,360.0 420.0,590.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="300.0,1040.0 260.0,900.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="420.0,590.0 260.0,900.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="700.0,30.0 480.0,40.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="340.0,360.0 260.0,150.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="480.0,40.0 260.0,150.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="210.0,1660.0 310.0,1850.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="820.0,1040.0 850.0,850.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1770.0,730.0 1590.0,840.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1490.0,910.0 1590.0,840.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1610.0,110.0 1530.0,370.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1410.0,340.0 1530.0,370.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="640.0,1890.0 470.0,1940.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="310.0,1850.0 470.0,1940.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="820.0,1040.0 920.0,1100.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="420.0,590.0 640.0,780.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="850.0,850.0 640.0,780.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1680.0,1530.0 1780.0,1110.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1770.0,730.0 1800.0,940.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1780.0,1110.0 1800.0,940.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="910.0,1560.0 960.0,1650.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="700.0,1520.0 650.0,1160.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="820.0,1040.0 650.0,1160.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1660.0,1960.0 1890.0,1840.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1680.0,1530.0 1890.0,1840.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1590.0,840.0 1360.0,600.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="850.0,390.0 1170.0,580.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1360.0,600.0 1170.0,580.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="210.0,1660.0 20.0,1650.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="960.0,1650.0 1230.0,1630.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="170.0,1200.0 80.0,1480.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="20.0,1650.0 80.0,1480.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1530.0,370.0 1490.0,520.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1360.0,600.0 1490.0,520.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="700.0,30.0 620.0,290.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="850.0,390.0 620.0,290.0" style="fill:none;stroke:black;stroke-width:2" />
+<circle cx="640.0" cy="1890.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="210.0" cy="1660.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1660.0" cy="1960.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1610.0" cy="110.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="340.0" cy="360.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="170.0" cy="1200.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="300.0" cy="1040.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1830.0" cy="20.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="910.0" cy="1560.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1770.0" cy="730.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1490.0" cy="910.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="700.0" cy="1520.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="420.0" cy="590.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1410.0" cy="340.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="260.0" cy="900.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="820.0" cy="1040.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1680.0" cy="1530.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="700.0" cy="30.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="480.0" cy="40.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="260.0" cy="150.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="310.0" cy="1850.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="850.0" cy="850.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1590.0" cy="840.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1530.0" cy="370.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="470.0" cy="1940.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="920.0" cy="1100.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="640.0" cy="780.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1780.0" cy="1110.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1800.0" cy="940.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="960.0" cy="1650.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="650.0" cy="1160.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1890.0" cy="1840.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="850.0" cy="390.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1360.0" cy="600.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1170.0" cy="580.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="20.0" cy="1650.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1230.0" cy="1630.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="80.0" cy="1480.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1490.0" cy="520.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="620.0" cy="290.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+</svg></body>
+</html>

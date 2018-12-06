@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<body> 
+ <svg height="1970.0" width="1900.0" style="background: powderblue">
+<polyline points="170.0,1200.0 300.0,1040.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1610.0,110.0 1830.0,20.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="340.0,360.0 420.0,590.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="210.0,1660.0 310.0,1850.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="640.0,1890.0 470.0,1940.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="310.0,1850.0 470.0,1940.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1680.0,1530.0 1780.0,1110.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1780.0,1110.0 1800.0,940.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="850.0,390.0 1170.0,580.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="170.0,1200.0 80.0,1480.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="850.0,390.0 676.2125714338305,264.72148349260834" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="420.0,590.0 450.5643519449344,722.1616918725272" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="640.0,780.0 450.5643519449344,722.1616918725272" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1770.0,730.0 1723.1773223007185,829.0519715481175" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1590.0,840.0 1723.1773223007185,829.0519715481175" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1800.0,940.0 1723.1773223007185,829.0519715481175" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1360.0,600.0 1170.0505317409686,580.0053191188347" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1170.0,580.0 1170.0505317409686,580.0053191188347" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="700.0,1520.0 754.1575707765253,1585.8718479448803" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1680.0,1530.0 1781.1265162026375,1819.3570012120585" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1890.0,1840.0 1781.1265162026375,1819.3570012120585" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1610.0,110.0 1504.1625937884946,332.4903126009818" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1410.0,340.0 1504.1625937884946,332.4903126009818" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1530.0,370.0 1504.1625937884946,332.4903126009818" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1490.0,520.0 1446.0335918626388,598.7573699823689" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1490.0,910.0 1546.566576986443,834.7256436075334" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1590.0,840.0 1546.566576986443,834.7256436075334" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="340.0,360.0 312.95516296390474,171.23070609792308" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="480.0,40.0 312.95516296390474,171.23070609792308" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="260.0,150.0 312.95516296390474,171.23070609792308" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="700.0,30.0 636.4680522309136,88.66983947916353" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="480.0,40.0 636.4680522309136,88.66983947916353" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="210.0,1660.0 89.49148621478528,1602.3544534836592" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="20.0,1650.0 89.49148621478528,1602.3544534836592" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="80.0,1480.0 89.49148621478528,1602.3544534836592" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="820.0,1040.0 814.079527009353,872.4664687281644" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="850.0,850.0 814.079527009353,872.4664687281644" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="640.0,780.0 814.079527009353,872.4664687281644" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1360.0,600.0 1440.2713519776921,606.9931341676213" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1446.0335918626388,598.7573699823689 1440.2713519776921,606.9931341676213" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1546.566576986443,834.7256436075334 1440.2713519776921,606.9931341676213" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="620.0,290.0 660.437783863099,258.3609024346947" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="676.2125714338305,264.72148349260834 660.437783863099,258.3609024346947" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="636.4680522309136,88.66983947916353 660.437783863099,258.3609024346947" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1660.0,1960.0 1758.9985300142325,1845.0503534479199" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1781.1265162026375,1819.3570012120585 1758.9985300142325,1845.0503534479199" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1530.0,370.0 1507.7962582831556,453.2640306616911" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1490.0,520.0 1507.7962582831556,453.2640306616911" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="1230.0,1630.0 963.5575063809681,1643.075043057841" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="820.0,1040.0 820.4866878033126,1049.2917610786635" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="920.0,1100.0 820.4866878033126,1049.2917610786635" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="910.0,1560.0 906.8186398850798,1567.4514483468674" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="650.0,1160.0 695.5481812261539,1130.4225664584167" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="820.4866878033126,1049.2917610786635 695.5481812261539,1130.4225664584167" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="640.0,1890.0 757.4983013403094,1590.0555015554608" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="754.1575707765253,1585.8718479448803 757.4983013403094,1590.0555015554608" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="906.8186398850798,1567.4514483468674 757.4983013403094,1590.0555015554608" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="960.0,1650.0 962.9716668816618,1643.142523448816" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="963.5575063809681,1643.075043057841 962.9716668816618,1643.142523448816" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="906.8186398850798,1567.4514483468674 962.9716668816618,1643.142523448816" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="300.0,1040.0 265.2925462144101,901.510679614662" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="260.0,900.0 265.2925462144101,901.510679614662" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="450.5643519449344,722.1616918725272 265.2925462144101,901.510679614662" style="fill:none;stroke:black;stroke-width:2" />
+<circle cx="640.0" cy="1890.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="210.0" cy="1660.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1660.0" cy="1960.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1610.0" cy="110.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="340.0" cy="360.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="170.0" cy="1200.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="300.0" cy="1040.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1830.0" cy="20.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="910.0" cy="1560.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1770.0" cy="730.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1490.0" cy="910.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="700.0" cy="1520.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="420.0" cy="590.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1410.0" cy="340.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="260.0" cy="900.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="820.0" cy="1040.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1680.0" cy="1530.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="700.0" cy="30.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="480.0" cy="40.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="260.0" cy="150.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="310.0" cy="1850.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="850.0" cy="850.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1590.0" cy="840.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1530.0" cy="370.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="470.0" cy="1940.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="920.0" cy="1100.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="640.0" cy="780.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1780.0" cy="1110.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1800.0" cy="940.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="960.0" cy="1650.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="650.0" cy="1160.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1890.0" cy="1840.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="850.0" cy="390.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1360.0" cy="600.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1170.0" cy="580.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="20.0" cy="1650.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1230.0" cy="1630.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="80.0" cy="1480.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1490.0" cy="520.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="620.0" cy="290.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="676.2125714338305" cy="264.72148349260834" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="450.5643519449344" cy="722.1616918725272" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1723.1773223007185" cy="829.0519715481175" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1170.0505317409686" cy="580.0053191188347" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="754.1575707765253" cy="1585.8718479448803" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1781.1265162026375" cy="1819.3570012120585" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1504.1625937884946" cy="332.4903126009818" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1446.0335918626388" cy="598.7573699823689" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1546.566576986443" cy="834.7256436075334" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="312.95516296390474" cy="171.23070609792308" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="636.4680522309136" cy="88.66983947916353" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="89.49148621478528" cy="1602.3544534836592" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="814.079527009353" cy="872.4664687281644" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1440.2713519776921" cy="606.9931341676213" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="660.437783863099" cy="258.3609024346947" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1758.9985300142325" cy="1845.0503534479199" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="1507.7962582831556" cy="453.2640306616911" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="963.5575063809681" cy="1643.075043057841" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="820.4866878033126" cy="1049.2917610786635" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="906.8186398850798" cy="1567.4514483468674" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="695.5481812261539" cy="1130.4225664584167" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="757.4983013403094" cy="1590.0555015554608" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="962.9716668816618" cy="1643.142523448816" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="265.2925462144101" cy="901.510679614662" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+</svg></body>
+</html>
