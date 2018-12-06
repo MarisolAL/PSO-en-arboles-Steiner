@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue;"> 
+ <svg height="1510.0" width="610.0">
+<polyline points="200.0,1200.0 269.5788535344748,1275.117611261004" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="600.0,1200.0 518.8849588460124,1306.7471032802357" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="269.5788535344748,1275.117611261004 295.7874230626124,1316.3235815515209" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="518.8849588460124,1306.7471032802357 507.6395078873372,1324.5821854777282" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="200.0,1500.0 300.7509256149377,1324.8910558636044" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="295.7874230626124,1316.3235815515209 300.7509256149377,1324.8910558636044" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="600.0,1500.0 505.2003670045221,1328.6334625024751" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="507.6395078873372,1324.5821854777282 505.2003670045221,1328.6334625024751" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="300.7509256149377,1324.8910558636044 505.2003670045221,1328.6334625024751" style="fill:none;stroke:black;stroke-width:2" />
+<circle cx="600.0" cy="1200.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="600.0" cy="1500.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="200.0" cy="1200.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="200.0" cy="1500.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="269.5788535344748" cy="1275.117611261004" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="518.8849588460124" cy="1306.7471032802357" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="295.7874230626124" cy="1316.3235815515209" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="507.6395078873372" cy="1324.5821854777282" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="300.7509256149377" cy="1324.8910558636044" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="505.2003670045221" cy="1328.6334625024751" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+</svg></body>
+</html>

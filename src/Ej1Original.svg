@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<body style="background-color:powderblue;"> 
+ <svg height="1510.0" width="610.0">
+<polyline points="600.0,1200.0 600.0,1500.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="600.0,1200.0 200.0,1200.0" style="fill:none;stroke:black;stroke-width:2" />
+<polyline points="200.0,1200.0 200.0,1500.0" style="fill:none;stroke:black;stroke-width:2" />
+<circle cx="600.0" cy="1200.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="600.0" cy="1500.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="200.0" cy="1200.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+<circle cx="200.0" cy="1500.0" r="1.2" stroke="tomato" stroke-width="0.2" fill="tomato" />
+</svg></body>
+</html>
