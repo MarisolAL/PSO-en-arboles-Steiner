@@ -1,6 +1,7 @@
 module steiner
 include("particula.jl")
 include("pso.jl")
+include("visualizador.jl")
 using LightGraphs, SimpleWeightedGraphs
 using Random
 using Dates
@@ -73,7 +74,6 @@ function obten_arbol_con_punto(S,p::Array{Float64,1})
     add_vertex!(graf) #a;adimos un vertice
     for v in vertices(graf)
         if v != vert + 1 #si no es el vertice a;adido
-            #println("vertice1 = ",dict[v]," vertice 2 = ",dict[vert + 1]," distancia =",distancia_2_puntos(dict[v],dict[v+1]))
             add_edge!(graf,v,vert+1,distancia_2_puntos(dict[v],dict[vert + 1])) #Conectamos al vertice
         end
     end
@@ -110,6 +110,9 @@ end
 function obten_puntos_steiner(st::Steiner,iteracion_maxima::Int64,swarms::Int64,tam_pob::Int64,nombre_archivo)
     k = 0
     peso_0 = st.peso
+    peso_inicial = st.peso
+    semilla = abs(rand(Int))
+    Random.seed!(semilla)
     while k < swarms
         x1 = Float64(rand(particula.limite_inferior[1]: particula.limite_superior[1]))
         x2 = Float64(rand(particula.limite_inferior[2]: particula.limite_superior[2]))
@@ -128,8 +131,9 @@ function obten_puntos_steiner(st::Steiner,iteracion_maxima::Int64,swarms::Int64,
         end
         k+=1
     end
+    porcentaje_f = 1 - peso_0/peso_inicial
     archivo = open(string(nombre_archivo,".txt"), "a")
-    escritura = string("Arbol final : ",arbol_actual,"\n")
+    escritura = string("Arbol final : ",arbol_actual,"\n","Mejora total = ",porcentaje_f,"\n Semilla = ",semilla,"\n")
     write(archivo, escritura)
     for e in edges(arbol_actual[1])
         write(archivo,string(e,"\n"))
@@ -147,19 +151,24 @@ function obten_arreglo(nombre_archivo)
     return N
 end
 
+
+if size(ARGS)[1]<4
+    println("ERROR, ejecutar con los argumentos en orden: \n nombre_archivo_con_puntos iteracion_maxima cantidad_de_swarms tamano_de_poblacion")
+    exit()
+end
 #Pruebas
 S = Set(obten_arreglo(string(Meta.parse(ARGS[1]))))
 arbol = construye_arbol(S)
-#println(arbol[1])
-#println(obten_peso_total(arbol))
-arbol_2= obten_arbol_con_punto(arbol,[1.87,0])
-#println(arbol_2[1])
-#println(obten_peso_total(arbol_2))
 stein = Steiner(S)
-fecha = string("Salidas_",Dates.now())
-archivo = open(string(fecha,".txt"), "a")
+fecha = string(Dates.now())
+visualizador.grafica_arbol(arbol_actual,string("Grafica_original_",fecha))
+archivo = open(string("Salidas_",fecha,".txt"), "a")
 escritura = string("Puntos:",S,"\nPeso original\n",stein.peso,"\n")
 write(archivo,escritura )
 close(archivo)
-obten_puntos_steiner(stein, 1000,100,30,fecha)
+iter_m = parse(Int64,string(Meta.parse(ARGS[2])))
+swarms = parse(Int64,string(Meta.parse(ARGS[3])))
+tam_pob = parse(Int64,string(Meta.parse(ARGS[4])))
+obten_puntos_steiner(stein,iter_m,swarms,tam_pob,string("Salidas_",fecha,".txt"))
+visualizador.grafica_arbol(arbol_actual,string("Grafica_final_",fecha))
 end

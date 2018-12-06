@@ -49,7 +49,6 @@ function corre_pso(iteracion_maxima::Int64, pso::PSO)
         end
         i += 1
     end
-    #println(pso.mejor_global)
     return pso.mejor_global
 end
 
