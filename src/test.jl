@@ -34,4 +34,5 @@ println(pso.corre_pso(10000, p))
 #arbol_2= obten_arbol_con_punto(arbol,[1.87,0])
 #println(arbol_2[1])
 #println(obten_peso_total(arbol_2))
+#Tiempo con 900 iteraciones 150 swarms y 150 particulas por cada swarm =
 end

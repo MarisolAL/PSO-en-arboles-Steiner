@@ -52,20 +52,17 @@ function construye_arbol(S)
     return Arbol, puntos #Regresamos el arbol y el diccionario
 end
 
-
+"Funcion que obtiene el peso total de un arbol"
 function obten_peso_total(arbol)
     suma = 0
     for v in edges(arbol[1])
-        if v.weight < 0
-            println("ERROR SUMA MENOR A 0 ",v)
-        end
        suma += v.weight
    end
    return suma
 end
 
 #Funcion que dado un arbol agrega un punto
-#a la grafica y calcula el arbol
+#a la grafica y calcula el arbol generador de peso minimo
 function obten_arbol_con_punto(S,p::Array{Float64,1})
     graf = copy(S[1])
     dict = copy(S[2])
@@ -86,6 +83,9 @@ function obten_arbol_con_punto(S,p::Array{Float64,1})
     return Arbol, dict #Regresamos el arbol y el diccionario
 end
 
+"Etructura Steiner, cuenta con un conjunto de puntos, una grafica que es un arbol
+y un peso de dicho arbol, el arbol es un arreglo con una grafica y un diccionario con
+los puntos"
 mutable struct Steiner
     puntos
     arbol
@@ -107,6 +107,8 @@ function eval_arbol(p)
     return peso
 end
 
+"Funcion que se encarga de crear los swarms y buscar
+puntos Steiner en la grafica"
 function obten_puntos_steiner(st::Steiner,iteracion_maxima::Int64,swarms::Int64,tam_pob::Int64,nombre_archivo)
     k = 0
     peso_0 = st.peso
@@ -124,7 +126,7 @@ function obten_puntos_steiner(st::Steiner,iteracion_maxima::Int64,swarms::Int64,
             porcentaje = 1 - punto_steiner.fitness/peso_0
             global arbol_actual = obten_arbol_con_punto(arbol_actual,punto)
             peso_0 = punto_steiner.mejor_fitness
-            archivo = open(string(nombre_archivo,".txt"), "a")
+            archivo = open(nombre_archivo, "a")
             escritura = string("Costo total: ", punto_steiner.mejor_fitness,"\nPORCENTAJE DE MEJORA: ",porcentaje,"\n punto encontrado = ",punto_steiner.mejor_posicion,"\n")
             write(archivo, escritura)
             close(archivo)
@@ -132,8 +134,8 @@ function obten_puntos_steiner(st::Steiner,iteracion_maxima::Int64,swarms::Int64,
         k+=1
     end
     porcentaje_f = 1 - peso_0/peso_inicial
-    archivo = open(string(nombre_archivo,".txt"), "a")
-    escritura = string("Arbol final : ",arbol_actual,"\n","Mejora total = ",porcentaje_f,"\n Semilla = ",semilla,"\n")
+    archivo = open(nombre_archivo, "a")
+    escritura = string("Arbol final : ",arbol_actual,"\n","Mejora total = ",porcentaje_f,"\nSemilla = ",semilla,"\n")
     write(archivo, escritura)
     for e in edges(arbol_actual[1])
         write(archivo,string(e,"\n"))
@@ -141,6 +143,7 @@ function obten_puntos_steiner(st::Steiner,iteracion_maxima::Int64,swarms::Int64,
     close(archivo)
 end
 
+"Funcion que obtiene el arreglo dado el archivo de entrada"
 function obten_arreglo(nombre_archivo)
     N = Set()
     ls = open(nombre_archivo)
@@ -162,13 +165,14 @@ arbol = construye_arbol(S)
 stein = Steiner(S)
 fecha = string(Dates.now())
 visualizador.grafica_arbol(arbol_actual,string("Grafica_original_",fecha))
-archivo = open(string("Salidas_",fecha,".txt"), "a")
+reporte = string("Reporte_",fecha,".txt")
+archivo = open(reporte, "a")
 escritura = string("Puntos:",S,"\nPeso original\n",stein.peso,"\n")
 write(archivo,escritura )
 close(archivo)
 iter_m = parse(Int64,string(Meta.parse(ARGS[2])))
 swarms = parse(Int64,string(Meta.parse(ARGS[3])))
 tam_pob = parse(Int64,string(Meta.parse(ARGS[4])))
-obten_puntos_steiner(stein,iter_m,swarms,tam_pob,string("Salidas_",fecha,".txt"))
+obten_puntos_steiner(stein,iter_m,swarms,tam_pob,reporte)
 visualizador.grafica_arbol(arbol_actual,string("Grafica_final_",fecha))
 end

@@ -28,6 +28,7 @@ extra = 10
         return resultado
     end
 
+    "Funcion que calcula los limites del canvas dado los puntos del arbol"
     function pon_limites(arbol)
         vertices = nv(arbol[1])
         diccionario = arbol[2]
@@ -60,7 +61,7 @@ extra = 10
     function grafica_arbol(arbol, nombre_archivo)
         archivo = open(string(nombre_archivo,".svg"), "a")
         pon_limites(arbol)
-        inicio = string("<!DOCTYPE html>\n<html>\n<body style=\"background-color:powderblue;\"> \n <svg height=\"",(lim_la_max+ lim_la_min)*extra +10,"\" width=\"", (lim_an_max + lim_an_min)*extra +10 ,"\">\n")
+        inicio = string("<!DOCTYPE html>\n<html>\n<body> \n <svg height=\"",(lim_la_max+ lim_la_min)*extra +10,"\" width=\"", (lim_an_max + lim_an_min)*extra +10 ,"\" style=\"background: powderblue\">\n")
         fin = "</svg></body>\n</html>"
         seg = segmentos(arbol)
         write(archivo,string(inicio,seg,fin))
