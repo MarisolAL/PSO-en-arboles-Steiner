@@ -8,6 +8,8 @@ end
 
 distancia_minima = 10
 
+"Funcion que calcula un conjunto de puntos euclideanos, el conjunto
+es del tama;o del argumento que reciba"
 function genera_grafica(numero_puntos::Int64)
     puntos = Dict{Int64, Array{Int64,1}}()
     punto = [rand(-100:100),rand(-100:100)]
