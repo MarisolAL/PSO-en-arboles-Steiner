@@ -7,6 +7,7 @@ using Random
 using Dates
 using DelimitedFiles
 
+
 global arbol_actual
 
 "Funcion que calcula la distancia entre 2 arreglos bidimensionales"
@@ -132,6 +133,7 @@ function obten_puntos_steiner(st::Steiner,iteracion_maxima::Int64,swarms::Int64,
             close(archivo)
         end
         k+=1
+        println(k)
     end
     porcentaje_f = 1 - peso_0/peso_inicial
     archivo = open(nombre_archivo, "a")
